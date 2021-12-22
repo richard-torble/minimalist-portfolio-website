@@ -1,0 +1,279 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 3.375,
+  9: $spacer * 4,
+  10: $spacer * 4.5,
+  11: $spacer * 5,
+  12: $spacer * 6,
+  13: $spacer * 7.188,
+  14: $spacer * 9.375,
+);
+// scss-docs-end spacer-variables-maps
+
+// Settings for the `<body>` element.
+
+$body-color: rgba(51, 50, 61, 0.8);
+
+// scss-docs-start gray-color-variables
+$gray-200: #e6e6e7;
+$gray-300: #fafafa;
+$gray-400: #f5f5f5;
+$gray-500: #d8d6d7;
+$gray-900: #1d3445;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue: #33323d;
+$red: #f43030;
+$green: #5fb4a2;
+$white: #ffffff;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary: $blue;
+$info: $green;
+$secondary: #203a4c;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start headings-variables
+$headings-font-family: "Ibarra Real Nova", serif;
+$headings-color: $primary;
+$headings-font-weight: 700;
+$headings-margin-bottom: $spacer * 1.75;
+// scss-docs-end headings-variables
+
+// Style p element.
+$paragraph-margin-bottom: 1.5rem;
+
+// scss-docs-start border-variables
+$border-color: rgba(51, 50, 61, 0.15);
+// scss-docs-end border-variables
+
+// scss-docs-start border-radius-variables
+$border-radius: 0;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start font-variables
+$font-family-base: "Public Sans", sans-serif;
+
+$font-weight-bold: 700;
+
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.813;
+$font-size-lg: $font-size-base * 2.5;
+
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 2;
+// scss-docs-end font-variables
+
+// scss-docs-start input-btn-variables
+$input-btn-padding-y: 1.063rem;
+$input-btn-padding-x: 2rem;
+$btn-font-size: 0.75rem;
+// scss-docs-end input-btn-variables
+
+// scss-docs-start nav-variables
+$nav-link-font-size: $font-size-sm;
+$nav-link-padding-y: 0;
+$nav-link-hover-color: $info;
+// scss-docs-end nav-variables
+
+// scss-docs-start navbar-variables
+$navbar-nav-link-padding-x: 0;
+$navbar-padding-y: 0;
+$navbar-brand-padding-y: 0;
+$navbar-brand-margin-end: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+// scss-docs-end navbar-variables
+
+// scss-docs-start navbar-theme-variables
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $info;
+$navbar-light-active-color: $info;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $info;
+$navbar-dark-active-color: $info;
+// scss-docs-end navbar-theme-variables
+
+// Forms
+
+// scss-docs-start form-label-variables
+$form-label-margin-bottom: 0.5rem;
+$form-label-font-size: $font-size-sm;
+$form-label-font-weight: $font-weight-bold;
+$form-label-color: $primary;
+// scss-docs-end form-label-variables
+
+// scss-docs-start form-input-variables
+$input-padding-y: 0.563rem;
+$input-padding-x: 1rem;
+$input-bg: $gray-200;
+$input-font-size: $font-size-sm;
+$input-placeholder-color: #33323d40;
+// scss-docs-end form-input-variables
+
+// scss-docs-start form-feedback-variables
+$form-feedback-font-size: 0.625rem;
+$form-feedback-font-style: italic;
+// scss-docs-end form-feedback-variables
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/forms";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      values: (
+        0: 0px,
+        1: 1px,
+        2: 2px,
+        3: 3px,
+        4: 4px,
+      ),
+    ),
+    "opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        25: 0.25,
+        50: 0.5,
+        75: 0.75,
+        80: 0.8,
+        100: 1,
+      ),
+    ),
+    "position":
+      map-merge(
+        map-get($utilities, "position"),
+        (
+          responsive: true,
+        )
+      ),
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+        )
+      ),
+    "background-color":
+      map-merge(
+        map-get($utilities, "background-color"),
+        (
+          responsive: true,
+        )
+      ),
+    "color":
+      map-merge(
+        map-get($utilities, "color"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 6. Add additional custom code here
+
+// Removes border on toggler
+.navbar-toggler {
+  border: 0;
+}
+
+// Updates togger icon to custom hamburger
+.navbar-light .navbar-toggler-icon {
+  background-image: url(/images/icons/hamburger.svg);
+  width: 1em;
+}
+
+// Replace hamburger icon with close icon when navbar collapse is expanded.
+.navbar-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url(/images/icons/close.svg);
+  width: 1em;
+}
+
+// Buttons
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-dark:hover,
+.btn-dark:active {
+  background-color: $green;
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: $primary;
+}
+
+// Bootstrap Icons
+.bi {
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.bi:hover {
+  color: $info;
+}
+.icons-contact {
+  .bi {
+    color: $primary;
+  }
+
+  .bi:hover {
+    color: $info;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: $white;
+  }
+}
+
+// Pagination
+.pagination-prev,
+.pagination-next {
+  font-size: $font-size-sm;
+}

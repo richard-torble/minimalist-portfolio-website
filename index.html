@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <title>Richard Torble Portfolio</title>
+    <link rel=icon
+    href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/icons/robot.svg>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white mt-5 mb-6">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
+          <ul
+            class="
+              navbar-nav
+              align-items-center
+              ms-auto
+              bg-primary bg-md-white
+              ls-2
+              pt-6 pt-md-0
+              py-md-0
+              w-75 w-md-auto
+            "
+          >
+            <li class="nav-item mb-5 mb-md-0">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mb-5 mb-md-0 mx-md-6">
+              <a class="nav-link" href="/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item mb-5 mb-md-0">
+              <a class="nav-link" href="/contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container hero mb-12">
+      <div class="row">
+        <div class="col position-relative">
+          <picture>
+            <!-- Displays on viewports 1400px or higher -->
+            <source
+              srcset="/images/homepage/desktop/image-homepage-hero@2x.jpg"
+              media="(min-width: 1400px)"
+            />
+            <!-- Displays on viewports 768px or higher -->
+            <source
+              srcset="/images/homepage/tablet/image-homepage-hero@2x.jpg"
+              media="(min-width: 768px)"
+            />
+            <!-- Default image on viewports less than 768px -->
+            <img
+              src="/images/homepage/mobile/image-homepage-hero@2x.jpg"
+              alt=""
+              class="img-fluid hero-image mb-4 mb-md-0"
+            />
+          </picture>
+
+          <div
+            class="
+              hero-content
+              bg-white
+              position-sm-static position-md-absolute
+              bottom-0
+              start-0
+              w-md-75
+              pt-md-8
+              ps-md-2
+            "
+          >
+            <h2 class="hero-content-heading w-md-75">
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h2>
+            <div class="btn-group">
+              <a href="#about" class="btn btn-dark p-3 border-0"
+                ><img src="/images/icons/down-arrows.svg" alt=""
+              /></a>
+              <a
+                href="#about"
+                class="btn btn-secondary text-uppercase ls-2 border-0"
+                >About Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container about mb-7" id="about">
+      <div class="row">
+        <div class="about-image col-md-5 col-xl-6 mb-5 mb-md-0">
+          <picture>
+            <!-- Displays on viewports 1400px or higher -->
+            <source
+              srcset="/images/homepage/desktop/image-homepage-profile@2x.jpg"
+              media="(min-width: 1400px)"
+            />
+            <!-- Displays on viewports 768px or higher -->
+            <source
+              srcset="/images/homepage/tablet/image-homepage-profile@2x.jpg"
+              media="(min-width: 768px)"
+            />
+            <!-- Default image on viewports less than 768px -->
+            <img
+              src="/images/homepage/mobile/image-homepage-profile@2x.jpg"
+              alt="about image"
+              class="img-fluid"
+            />
+          </picture>
+        </div>
+        <div
+          class="
+            about-content
+            col-md-6 col-xl-4
+            py-5
+            border-top border-bottom
+            ms-auto
+          "
+        >
+          <h2 class="about-heading">About Me</h2>
+          <p class="about-copy opacity-80 text-primary">
+            I’m a junior front-end developer looking for a new role in an
+            exciting company. I focus on writing accessible HTML, using modern
+            CSS practices and writing clean JavaScript. When writing JavaScript
+            code, I mostly use React, but I can adapt to whatever tools are
+            required. I’m based in London, UK, but I’m happy working remotely
+            and have experience in remote teams. When I’m not coding, you’ll
+            find me outdoors. I love being out in nature whether that’s going
+            for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+          <a
+            href="/portfolio.html"
+            class="btn btn-outline-primary text-uppercase ls-2"
+            >Go To Portfolio</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact container">
+      <div class="row py-10 justify-content-center align-items-center">
+        <div class="col-md-6 col-xl-4">
+          <h2 class="text-center mb-md-0">
+            Interested in doing a project together?
+          </h2>
+        </div>
+        <div class="col d-none d-md-block">
+          <hr />
+        </div>
+        <div class="col-auto">
+          <a
+            href="/contact.html"
+            class="btn btn-outline-primary text-uppercase ls-2"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="footer bg-primary py-8 py-md-5">
+      <nav
+        class="navbar navbar-dark navbar-expand text-uppercase ls-2 text-center"
+      >
+        <div class="container flex-column flex-md-row">
+          <a href="#" class="navbar-brand me-md-7 mb-6 mb-md-0">
+            <img src="/images/logo-light.svg" alt="logo-light" />
+          </a>
+          <ul class="navbar-nav me-md-auto flex-column flex-md-row">
+            <li class="nav-item mb-5 mb-md-0">
+              <a href="/index.html" class="nav-link active" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-md-6 mb-5 mb-md-0">
+              <a href="/portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item mb-6 mb-md-0">
+              <a href="/contact.html" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+          <div class="icons-social col-auto d-flex justify-content-center">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-twitter mx-3"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
